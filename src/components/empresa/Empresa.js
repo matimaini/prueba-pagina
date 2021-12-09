@@ -11,7 +11,7 @@ const Empresa = (props) => {
     return (
         <div sx={{ width: '70%' }}>
 
-            <Box sx={{ textAlign: 'left', p: '100', backgroundImage: imagen }}>
+            <Box sx={{ textAlign: 'left', p: '100'}}>
                 <Typography
                     variant="h4"
                     component="div"
