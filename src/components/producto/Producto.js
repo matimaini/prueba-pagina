@@ -1,70 +1,64 @@
-import { Typography } from '@mui/material'
+import { Image } from '@mui/icons-material';
+import { Container, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 
-const Producto = (props) => {
+const Producto = ({ fondo, bgcolor, titulo, data, imagen }) => {
     return (
 
-
-        <Box sx={{ textAlign: 'left', p: '100' }}>
-            <Typography
-                variant="h4"
-                component="div"
-                align="left"
-                sx={{
-                    flexGrow: 1,
-                    fontFamily: 'Montserrat',
-                    fontWeight: 'bold'
-                }} >
-
-                {props.titulo}
-
-
-            </Typography>
-
-            {/* <Box sx={{
-                textAlign: 'left',
-                borderLeft: 10,
-                borderColor: 'text.primary',
-                pl: 5,
-
-            }}>
-                <Typography
-                    variant="body1"
-                    component="div"
-                    align="center"
-                    sx={{
-                        flexGrow: 1,
-                        fontFamily: 'Montserrat',
-                        textAlign: 'left',
-                        fontWeight: 'bold'
-                    }} > */}
+        <Container maxWidth="100%" id="producto"
+            sx={{
+                backgroundImage: `url(${fondo} )`,
+                bgcolor: { bgcolor },
+                width: '100%'
+            }}  >
 
             <Box sx={{
-                textAlign: 'left',
-                borderLeft: 10,
-                borderColor: 'text.primary',
-                p: 2
+                textAlign: 'left', m: '10%', width: '70%'
             }}>
+                <div align="right">
+                    <img src={imagen} alt="producto" width="100" style={{ position: 'absolute' }} />
+                </div>
                 <Typography
-                    variant="h6"
+                    variant="h4"
                     component="div"
                     align="left"
                     sx={{
                         flexGrow: 1,
-                        fontFamily: 'Montserrat'
+                        fontFamily: 'Montserrat',
+                        fontWeight: 'bold'
                     }} >
-                    <Box>
 
-                        {props.data}
-                    </Box>
+                    {titulo}
+
+
                 </Typography>
-                {/* <img src={props.data} alt="producto"> */}
+
+                <Box sx={{
+                    textAlign: 'left',
+                    borderLeft: 10,
+                    borderColor: 'text.primary',
+                    p: 2
+                }}>
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        align="left"
+                        sx={{
+                            flexGrow: 1,
+                            fontFamily: 'Montserrat'
+                        }} >
+                        <Box>
+
+                            {data}
+                        </Box>
+                    </Typography>
+
+                </Box>
+
             </Box>
 
-        </Box>
-
-
+        </Container>
     )
 }
 

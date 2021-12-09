@@ -21,7 +21,7 @@ const Barra = () => {
                         <Toolbar sx={{ backgroundColor: '#FFFFFF' }}>
 
                             <img src="logos/eiv_color2.png" 
-                            alt="logo"/>
+                            alt="logo" />
                             
 
 
