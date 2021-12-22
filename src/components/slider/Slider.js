@@ -6,7 +6,13 @@ import { Carousel } from 'react-bootstrap'
 function slider() {
 
     return (
-        <div sx={{ p:4}}>
+        <div sx={{
+            m: "auto", minHeight: "100vh",
+            verticalAlign: "center",
+            alignContent: "center"
+        }}>
+
+
             <Carousel sx={{
                 flexGrow: 1,
 

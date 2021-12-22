@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Barra from './components/barra/Barra';
 import Slider from './components/slider/Slider';
 import Empresa from './components/empresa/Empresa'
-import { Box } from '@mui/system';
+import Clientes from './components/clientes/Clientes'
 import Producto from './components/producto/Producto';
 import PortalClientes from '../src/assets/logos/PORTAL_CLIENTES.png';
 import PortalVendedores from '../src/assets/logos/PORTAL_VENDEDORES.png';
@@ -12,55 +12,76 @@ import Tarjetas from '../src/assets/logos/ADM_TARJETAS.png';
 import Fondo from '../src/assets/logos/img_contenido_redesb.png';
 import FondoI from '../src/assets/logos/img_contenido_redesc.png';
 import Container from '@mui/material/Container';
+import Rrhh from './components/rrhh/Rrhh';
+import Busquedas from './components/busquedas/Busquedas';
 
 
 function App() {
   return (
     <div className="App">
-      <a name="home"></a>
-      <header className="App-header">
+      <>
+        <a name="home"></a>
+
         <Barra />
-        <Container maxWidth="100%" >
-          <Slider />
+        <Container maxWidth="100%" sx={{
+          minHeight: "100vh",
+          verticalAlign: "center",
+          alignContent: "center"
+        }} >
+          <Slider class="slide" />
         </Container>
-        <Container maxWidth="100%" sx={{bgcolor:'#373C46', backgroundImage: `url(${Fondo} )`}}  >
+        <a name="Empresa"></a>
+        <Empresa
+          class="slide"
+          titulo="NUESTRA EMPRESA"
+          fondo={Fondo}
+          colorfondo="#373C46"
+        />
 
-          <Empresa titulo="NUESTRA EMPRESA"
-            fondo={Fondo}
-            bgcolor="#373C46" />
-        </Container>
+        <a name="productos"></a>
 
-        <a name="Empresa2"></a>
-        <Container maxWidth="100%" sx={{ backgroundImage: `url(${FondoI} )`}}>
-          <Producto
-            fondo={FondoI}
-            titulo="PORTAL CLIENTES"
-            data="PLATAFORMA ONLINE DISEÑADA CON EL FIN DE ACOMPAÑAR Y ADMINISTRAR LOS MOVIMIENTOS DE TUS ASOCIADOS"
-            imagen={PortalClientes} />
-        </Container>
-        <a name="contacto"></a>
-        <Container maxWidth="100%" sx={{bgcolor:'#373C46' , backgroundImage: `url(${Fondo} )`}}>
-          <Producto
+        <Producto fondo={FondoI}
+          titulo="PORTAL VENDEDORES"
+          data="PLATAFORMA ONLINE DONDE PERMITIRA REALIZAR GESTION DE PRESTAMOS DESDE UNA BASE EXTERNA"
+          imagen={PortalVendedores}
+        />
 
-            titulo="ADMINISTRACION DE TARJETAS"
-            data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO. NUJESTRO SOFTWARE CUENTA CON UN MODULO COMPLETO PARA DICHA ADMINISTRACION."
-            imagen={Tarjetas} />
+        <Producto
+          fondo={Fondo}
+          titulo="PORTAL CLIENTES"
+          data="PLATAFORMA ONLINE DISEÑADA CON EL FIN DE ACOMPAÑAR Y ADMINISTRAR LOS MOVIMIENTOS DE TUS ASOCIADOS"
+          imagen={PortalClientes}
+          colorfondo="#373C46"
+        />
 
-        </Container>
-
-        <Container maxWidth="100%" sx={{ backgroundImage: `url(${FondoI} )`}}>
-          <Producto
-            fondo={FondoI}
-            titulo="PORTAL VENDEDORES"
-            data="PLATAFORMA ONLINE DONDE PERMITIRA REALIZAR GESTION DE PRESTAMOS DESDE UNA BASE EXTERNA"
-            imagen={PortalVendedores} />
-        </Container>
+        <Producto
+          fondo={FondoI}
+          titulo="ADMINISTRACION DE TARJETAS"
+          data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO. NUESTRO SOFTWARE CUENTA CON UN MODULO COMPLETO PARA DICHA ADMINISTRACION."
+          imagen={Tarjetas}
+        />
 
         <a name="clientes"></a>
+        <Clientes
+          titulo="ALGUNOS DE NUESTROS CLIENTES"
+          fondo={Fondo}
+          colorfondo="#373C46"
+          class="slide" />
+
         <a name="rrhh"></a>
 
-
-      </header>
+        <Rrhh
+          class="slide"
+          titulo="TALENTO HUMANO"
+          fondo={FondoI}
+        />
+        <a name="busquedas"></a>
+        <Busquedas
+          class="slide"
+          titulo="BUSQUEDAS LABORALES"
+          fondo={Fondo}
+          colorfondo="#373C46" />
+      </>
     </div>
   );
 }

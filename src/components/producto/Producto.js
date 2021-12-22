@@ -1,39 +1,48 @@
-import { Image } from '@mui/icons-material';
 import { Container, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 
-const Producto = ({ fondo, bgcolor, titulo, data, imagen }) => {
+const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
     return (
 
-        <Container maxWidth="100%" id="producto"
+        <Container maxWidth="100%"
+            id="producto"
+            align="center"
+            justify="center"
+            direction="column"
+            maxWidth="100%"
             sx={{
+                bgcolor: colorfondo,
+                minHeight: "100vh",
+                verticalAlign: "center",
+                alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
-                bgcolor: { bgcolor },
-                width: '100%'
+                display: "flex",
+
             }}  >
 
             <Box sx={{
-                textAlign: 'left', m: '10%', width: '70%'
+                textAlign: 'left', m: 'auto', width: '70%'
             }}>
-                <div align="right">
-                    <img src={imagen} alt="producto" width="100" style={{ position: 'absolute' }} />
-                </div>
-                <Typography
-                    variant="h4"
-                    component="div"
-                    align="left"
-                    sx={{
-                        flexGrow: 1,
-                        fontFamily: 'Montserrat',
-                        fontWeight: 'bold'
-                    }} >
+                <Box sx={{ mb: 5 }}>
+                    <div align="right">
+                        <img src={imagen} alt="producto" width="100" style={{ position: 'absolute' }} />
+                    </div>
+                    <Typography
+                        variant="h4"
+                        component="div"
+                        align="left"
+                        sx={{
+                            flexGrow: 1,
+                            fontFamily: 'Montserrat',
+                            fontWeight: 'bold'
+                        }} >
 
-                    {titulo}
+                        {titulo}
 
 
-                </Typography>
-
+                    </Typography>
+                </Box>
                 <Box sx={{
                     textAlign: 'left',
                     borderLeft: 10,
@@ -58,7 +67,7 @@ const Producto = ({ fondo, bgcolor, titulo, data, imagen }) => {
 
             </Box>
 
-        </Container>
+        </Container >
     )
 }
 
