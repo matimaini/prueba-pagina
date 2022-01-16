@@ -1,15 +1,14 @@
 import React from 'react'
 import { Box } from '@mui/system'
 import { Container, Divider, Typography } from '@mui/material'
-import Curriculum from '../curriculum/Curriculum'
+
 
 const Rrhh = ({ fondo, colorfondo, titulo }) => {
     return (
         <div>
             <>
                 <a name="rrhh" />
-                <Container maxWidth="100%"
-                    id="rrhh"
+                <Container id="rrhh"
                     align="center"
                     justify="center"
                     direction="column"
@@ -19,12 +18,14 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
                         verticalAlign: "center",
                         alignContent: "center",
                         backgroundImage: `url(${fondo} )`,
+                        backgroundRepeat: 'none',
                         display: "flex",
-                        
+                        minWidth: "100vw"
+
                     }}  >
 
                     <Box sx={{
-                        textAlign: 'left', m: '10%', width: '70%'
+                        textAlign: 'left', m: 'auto', width: '70%'
                     }}>
 
                         <Typography
@@ -70,8 +71,7 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Curriculum
-                        titulo="DEJANOS TUS DATOS" />
+
                     <Divider />
                 </Container>
             </>

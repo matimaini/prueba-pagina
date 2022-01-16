@@ -1,4 +1,4 @@
-import { Margin } from '@mui/icons-material'
+
 import { Container, Fab, Typography } from '@mui/material'
 import NavigationIcon from '@mui/icons-material/Navigation'
 import { Box } from '@mui/system'
@@ -11,7 +11,6 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
             align="center"
             justify="center"
             direction="column"
-            maxWidth="100%"
             sx={{
                 bgcolor: colorfondo,
                 minHeight: "100vh",
@@ -25,22 +24,22 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
             <Box sx={{
                 textAlign: 'left', m: 'auto', width: '70%'
             }}>
+                <Box sx={{ mb: 5 }}>
+                    <Typography
+                        variant="h4"
+                        component="div"
+                        align="left"
 
-                <Typography
-                    variant="h4"
-                    component="div"
-                    align="left"
-                    
-                    sx={{
-                        flexGrow: 1,
-                        fontFamily: 'Montserrat',
-                        fontWeight: 'bold'
-                    }}>
+                        sx={{
+                            flexGrow: 1,
+                            fontFamily: 'Montserrat',
+                            fontWeight: 'bold'
+                        }}>
 
-                    {titulo}
+                        {titulo}
 
-                </Typography>
-
+                    </Typography>
+                </Box>
                 <Box sx={{
                     textAlign: 'left',
                     borderLeft: 10,
@@ -92,9 +91,9 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                                     variant="extended"
                                     color="primary"
                                     aria-label="add"
-                                    
+
                                 >
-                                    <NavigationIcon  />
+                                    <NavigationIcon />
                                     Envianos tu CV
                                 </Fab>
                             </div>

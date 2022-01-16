@@ -1,6 +1,5 @@
 import React from 'react'
 import './Empresa.css'
-import imagen from './img_contenido_redes.png'
 import { Box } from '@mui/system'
 import { Container, Typography } from '@mui/material'
 
@@ -13,7 +12,6 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
             align="center"
             justify="center"
             direction="column"
-            maxWidth="100%"
             sx={{
                 bgcolor: colorfondo,
                 minHeight: "100vh",

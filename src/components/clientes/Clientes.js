@@ -23,7 +23,6 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
             align="center"
             justify="center"
             direction="column"
-            maxWidth="100%"
             sx={{
                 bgcolor: colorfondo,
                 minHeight: "100vh",
@@ -37,11 +36,11 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
             <Box sx={{
                 textAlign: 'left', m: 'auto', width: '70%'
             }}>
-
+                <Box sx={{ mb: 5 }}>
                 <Typography
                     variant="h4"
                     component="div"
-                    align="left"
+                    align="center"
                     sx={{
                         flexGrow: 1,
                         fontFamily: 'Montserrat',
@@ -52,55 +51,55 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
 
 
                 </Typography>
+            </Box>
+            <Box sx={{
+                textAlign: 'left',
+                borderLeft: 0,
+                borderColor: 'text.primary',
+                p: 5,
 
-                <Box sx={{
-                    textAlign: 'left',
-                    borderLeft: 10,
-                    borderColor: 'text.primary',
-                    p: 5, m: 2
-
-                }}>
-                    <Grid container spacing={8}>
-                        <Grid item xs={4}>
-                            <img src={Agilcred} alt="Agilcred" />
-                        </Grid>
-                        <Grid item xs={4}>
-                            <img src={Aginco} alt="Mutual Aginco" />
-                        </Grid>
-                        <Grid item xs={4}>
-                            <img src={Gusa} alt="Grupo Union SA" />
-                        </Grid>
-                        <Grid item xs={4}>
-                            <img src={Federada} alt="Federada ayuda economica" />
-                        </Grid>
-                        <Grid item xs={3}>
-                            <img src={Amesup} alt="Amesup" />
-                        </Grid>
-                        <Grid item xs={3}>
-                            <img src={Ivc} alt="IVC" />
-                        </Grid>
-                        <Grid item xs={2}>
-                            <img src={Provincial} alt="Mutual Provincial" />
-                        </Grid>
-                        <Grid item xs={3}>
-                            <img src={Mupim} alt="Mupim" />
-                        </Grid>
-                        <Grid item xs={2}>
-                            <img src={Lyf} alt="Luz y Fuerza" />
-                        </Grid>
-                        <Grid item xs={4}>
-                            <img src={Scbs} alt="San cristobal" />
-                        </Grid>
-                        <Grid item xs={3}>
-                            <img src={Venado} alt="venado" />
-                        </Grid>
+            }}>
+                <Grid container spacing={8}>
+                    <Grid item xs={4}>
+                        <img src={Agilcred} alt="Agilcred" />
                     </Grid>
-
-                </Box>
+                    <Grid item xs={4}>
+                        <img src={Aginco} alt="Mutual Aginco" />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img src={Gusa} alt="Grupo Union SA" />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img src={Federada} alt="Federada ayuda economica" />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <img src={Amesup} alt="Amesup" />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <img src={Ivc} alt="IVC" />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <img src={Provincial} alt="Mutual Provincial" />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <img src={Mupim} alt="Mupim" />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <img src={Lyf} alt="Luz y Fuerza" />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <img src={Scbs} alt="San cristobal" />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <img src={Venado} alt="venado" />
+                    </Grid>
+                </Grid>
 
             </Box>
 
-        </Container>
+        </Box>
+
+        </Container >
     )
 }
 

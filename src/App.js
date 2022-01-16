@@ -14,6 +14,8 @@ import FondoI from '../src/assets/logos/img_contenido_redesc.png';
 import Container from '@mui/material/Container';
 import Rrhh from './components/rrhh/Rrhh';
 import Busquedas from './components/busquedas/Busquedas';
+import Curriculum from './components/curriculum/Curriculum';
+import Contacto from './components/contacto/Contacto';
 
 
 function App() {
@@ -66,21 +68,29 @@ function App() {
           titulo="ALGUNOS DE NUESTROS CLIENTES"
           fondo={Fondo}
           colorfondo="#373C46"
-          class="slide" />
+        />
 
         <a name="rrhh"></a>
 
         <Rrhh
-          class="slide"
           titulo="TALENTO HUMANO"
           fondo={FondoI}
         />
+        <Curriculum
+          titulo="DEJANOS TU CURRICULUM"
+          fondo={Fondo}
+        />
+
         <a name="busquedas"></a>
         <Busquedas
-          class="slide"
           titulo="BUSQUEDAS LABORALES"
           fondo={Fondo}
           colorfondo="#373C46" />
+
+        <Contacto
+          titulo="CONTACTO"
+          fondo={FondoI}
+        />
       </>
     </div>
   );

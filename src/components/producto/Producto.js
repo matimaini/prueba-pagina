@@ -10,7 +10,6 @@ const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
             align="center"
             justify="center"
             direction="column"
-            maxWidth="100%"
             sx={{
                 bgcolor: colorfondo,
                 minHeight: "100vh",
