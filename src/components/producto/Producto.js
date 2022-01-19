@@ -26,7 +26,7 @@ const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
                 }}>
                     <Box sx={{ mb: 5 }}>
                         <div align="right">
-                            <img src={imagen} alt="producto" width="100" style={{ position: 'absolute' }} />
+                            <img src={imagen} alt="producto" width="150" style={{ position: 'absolute' }} />
                         </div>
                         <Typography
                             variant="h4"

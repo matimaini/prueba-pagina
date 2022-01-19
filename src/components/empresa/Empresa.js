@@ -54,7 +54,7 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
                             fontFamily: 'Montserrat'
                         }}>
                         <Box>
-                        Somos una empresa con mas de 35 años brindando servicios de software de gestion integral
+                            Somos una empresa con mas de 35 años brindando servicios de software de gestion integral
                             con el fin de satisfacer las necesidades informaticas con alto nivel de innovación y calidad hacia nuestros clientes.
                             EIV Software es una empresa que nace y se nutre de un grupo de profesionales altamente especializados en distintas áreas.
                             <p />

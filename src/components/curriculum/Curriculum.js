@@ -27,7 +27,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                 <Box
                     component="form"
                     sx={{
-                        '& .MuiTextField-root': { m: 1, width: '50ch', backgroundColor: '#385E70', borderTopLeftRadius:10, borderTopRightRadius:10 },
+                        '& .MuiTextField-root': { m: 1, width: '50ch', borderTopLeftRadius:10, borderTopRightRadius:10 },
                         '& .MuiInputLabel-root': { fontWeight: '1rem', borderTopLeftRadius:10, borderTopRightRadius:10 },
                         mt:5,
                         textAlign: 'center'
@@ -65,7 +65,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                                     placeholder="Placeholder"
                                     multiline />
 
-                                <Box sx={{ justifyContent: 'space-around', p: 2, display: 'block' }}>
+                                <Box sx={{ justifyContent: 'space-around', p: 2, display: 'flex' }}>
                                     <label for="boton-cv">
                                         <input type="file" id="boton-cv" style={{ display: 'none' }} />
 

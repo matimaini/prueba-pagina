@@ -19,59 +19,33 @@ import Contacto from './components/contacto/Contacto';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material/styles';
 
-const Theme = createTheme({
+const ThemeC = createTheme({
   palette: {
     type: 'light',
     primary: {
       main: '#36a9df',
-      
-    },
-    neutral: {
-      main: '#64748B',
-      contrastText: '#fff'
     },
     secondary: {
-      main: '#e0dadc',
+      main: '#bdbdbd',
     },
     background: {
-      default: '#36a9df',
-      paper: '#373C46',
-    },
-    error: {
-      main: '#ff6459',
+      paper: '#373c46',
+      default: '#969494',
     },
     text: {
-      primary: '#36a9df',
-      secondary: '#ffffff',
+      primary: '#ffffff',
+      secondary: '#000000',
     },
   },
-  typography: {
-    overline: {
-      fontFamily: '"Montserrat"',
-    },
-    button: {
-      fontWeight: '400',
-      lineHeight: 1.9,
-      fontSize: '1rem',
-    },
-    h1: {
-      fontFamily: '"Montserrat"',
-    },
-    fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
-  },
-  shape: {
-    borderTopRightRadius: 10,
-    borderTopLeftRadius:10,
-  },
-  
 });
+
 
 function App() {
   return (
     <div className="App">
       <>
         <a name="home"></a>
-        <ThemeProvider theme={Theme}>
+        <ThemeProvider theme={ThemeC}>
           <Barra />
           <Container maxWidth="100%" sx={{
             minHeight: "100vh",
@@ -107,7 +81,8 @@ function App() {
           <Producto
             fondo={FondoI}
             titulo="ADMINISTRACION DE TARJETAS"
-            data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO. NUESTRO SOFTWARE CUENTA CON UN MODULO COMPLETO PARA DICHA ADMINISTRACION."
+            data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO.
+              NUESTRO SOFTWARE CUENTA CON UN MODULO COMPLETO PARA DICHA ADMINISTRACION."
             imagen={Tarjetas}
           />
 

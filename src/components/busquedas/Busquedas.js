@@ -25,7 +25,7 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
             }}  >
 
             <Box sx={{
-                textAlign: 'left', m: 'auto', width: '70%', mt:5, mb:5
+                textAlign: 'left', m: 'auto', width: '70%', mt: 5, mb: 5
             }}>
                 <Box sx={{ mb: 5 }}>
                     <Typography
@@ -63,36 +63,36 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                             <u><b>DESARROLLADORES JAVA/.NET</b></u>
                             <p />
                             <div sx={{}}>
-                                FORMÁ PARTE DE UN EQUIPO DE IMPLEMENTACIÓN DE SOFTWARE<br />
-                                <p><b>REQUISITOS EXCLUYENTES: </b></p>
+                                Formá parte de un equipo de implementación de software<br />
+                                <p><b><u>REQUISITOS EXCLUYENTES:</u></b></p>
                                 <ul>
-                                    <li> BACKEND JAVA O .NET DEVELOPER CON +3 AÑOS DE EXPERIENCIA</li>
-                                    <li>CONOCIMIENTOS DE BASES DE DATOS RELACIONALES Y TRANSACT-SQL</li>
-                                    <li>EXPERIENCIA Y/O CONOCIMIENTOS CONSUMIENDO Y DESARROLLANDO SERVICIOS REST Y/O SOAP</li>
-                                    <li>BUEN MANEJO DE HERRAMIENTAS DE VERSIONADO DE CODIGO / GIT</li>
-                                    <li>NIVEL DE INGLES: INTERMEDIO</li>
+                                    <li> Backend java o .net developer con +3 años de experiencia</li>
+                                    <li>Conocimientos de bases de datos relacionales y transact-sql</li>
+                                    <li>Experiencia y/o conocimientos consumiendo y desarrollando servicios rest y/o soap</li>
+                                    <li>Buen manejo de herramientas de versionado de codigo / git</li>
+                                    <li>Nivel de ingles: intermedio</li>
                                 </ul>
-                                <p><b>REQUISITOS DESEABLES: </b></p>
+                                <p><b>Requisitos deseables: </b></p>
                                 <ul>
-                                    <li>TDD E INTEGRACION CONTINUA</li>
-                                    <li>REVISION DE CÓDIGO, AJUSTE DE PERFORMANCE, CUELLOS DE BOTELLA</li>
-                                    <li>PATRONES DE DISEÑO Y ARQUITECTURA, EVENT-DRIVEN ARCHITECTURE Y SOA</li>
-                                    <li>EXPERIENCIA EN RUBRO DE SEGUROS</li>
-                                    <li>EXPERIENCIA EN PRÁCTICAS AGILE, METODOLOGIA SCRUM</li>
+                                    <li>TDD e integracion continua</li>
+                                    <li>Revision de código, ajuste de performance, cuellos de botella</li>
+                                    <li>Patrones de diseño y arquitectura, event-driven architecture y soa</li>
+                                    <li>Experiencia en rubro de seguros</li>
+                                    <li>Experiencia en prácticas agile, metodologia scrum</li>
                                 </ul>
                                 <p><b>OFRECEMOS: </b></p>
                                 <ul>
-                                    <li>BONO ANUAL POR CUMPLIMIENTO DE OBJETIVOS</li>
-                                    <li>ACCESO A PLATAFORMA DE CAPACITACION ONLINE</li>
-                                    <li>BENEFICIOS PARA TU SALUD Y BIENESTAR</li>
-                                    <li>GIFT CARD CON IMPORTANTES BENEFICIOS</li>
-                                    <li>FLEXIBILIDAD PARA TRABAJO EN NUESTRAS OFICINAS O TRABAJO REMOTO</li>
+                                    <li>Bono anual por cumplimiento de objetivos</li>
+                                    <li>Acceso a plataforma de capacitacion online</li>
+                                    <li>Beneficios para tu salud y bienestar</li>
+                                    <li>Gift card con importantes beneficios</li>
+                                    <li>Flexibilidad para trabajo en nuestras oficinas o trabajo remoto</li>
                                 </ul>
                             </div>
                             <div align="center">
                                 <Fab variant="extended"
                                     href="#rrhh"
-                                    color="secondary"
+                                    color="primary"
                                     aria-label="add"
                                     elementType="file"
                                     component="span"

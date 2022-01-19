@@ -14,18 +14,15 @@ const Barra = () => {
 
             <Container maxWidth="false" fixed>
                 <Box >
-                    <AppBar position="fixed" color="primary">
-                        <Toolbar sx={{
-
-
-                        }}>
+                    <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
+                        <Toolbar >
 
                             <img src="logos/eiv_color2.png" alt="logo" />
                             
                             <Typography  color="primary" sx={{  m:'auto'}} align="center">
                             
-                                <Button href="#home"  href="#home"> HOME</Button>
-                                <Button variant="text" href="#Empresa" >EMPRESA</Button>
+                                <Button variant="text" color="primary" href="#home"> HOME</Button>
+                                <Button variant="text" color="primary" href="#Empresa" >EMPRESA</Button>
                                 <Button variant="text" color="primary" href="#productos">PRODUCTOS</Button>
                                 <Button variant="text" color="primary" href="#clientes">CLIENTES</Button>
                                 <Button variant="text" color="primary" href="#rrhh">    TALENTO HUMANO</Button>
