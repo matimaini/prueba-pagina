@@ -1,6 +1,7 @@
 
 import { Container, Fab, Typography } from '@mui/material'
 import NavigationIcon from '@mui/icons-material/Navigation'
+import AddIcon from '@mui/icons-material/Add';
 import { Box } from '@mui/system'
 import React from 'react'
 
@@ -18,11 +19,13 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                 alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
                 display: "flex",
+                /* m: 2 */
+
 
             }}  >
 
             <Box sx={{
-                textAlign: 'left', m: 'auto', width: '70%'
+                textAlign: 'left', m: 'auto', width: '70%', mt:5, mb:5
             }}>
                 <Box sx={{ mb: 5 }}>
                     <Typography
@@ -87,15 +90,18 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                                 </ul>
                             </div>
                             <div align="center">
-                                <Fab href="#rrhh"
-                                    variant="extended"
-                                    color="primary"
+                                <Fab variant="extended"
+                                    href="#rrhh"
+                                    color="secondary"
                                     aria-label="add"
+                                    elementType="file"
+                                    component="span"
+                                    sx={{ m: 2 }} >
 
-                                >
-                                    <NavigationIcon />
+                                    <AddIcon elementType='file' />
                                     Envianos tu CV
                                 </Fab>
+
                             </div>
                         </Box>
                     </Typography>

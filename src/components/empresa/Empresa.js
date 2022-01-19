@@ -32,7 +32,7 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
                         sx={{
                             flexGrow: 1,
                             fontFamily: 'Montserrat',
-                            fontWeight: 'bold'
+                            /* fontWeight: 'bold' */
                         }} >
 
                         {titulo}
@@ -53,14 +53,14 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
                             flexGrow: 1,
                             fontFamily: 'Montserrat'
                         }}>
-                        <Box sx={{}}>
-                            SOMOS UNA EMPRESA CON MAS DE 35 AÑOS BRINDANDO SERVICIOS DE SOFTWARE DE GESTION INTEGRAL
-                            CON EL FIN DE SATISFACER LAS NECESIDADES INFORMATICAS CON ALTO NIVEL DE INNOVACION Y CALIDAD HACIA NUESTROS CLIENTES.
-                            EIV SOFTWARE ES UNA EMPRESA QUE NACE Y SE NUTRE DE UN GRUPO DE PROFESIONALES ALTAMENTE ESPECIALIZADOS EN DISTINTAS AREAS.
+                        <Box>
+                        Somos una empresa con mas de 35 años brindando servicios de software de gestion integral
+                            con el fin de satisfacer las necesidades informaticas con alto nivel de innovación y calidad hacia nuestros clientes.
+                            EIV Software es una empresa que nace y se nutre de un grupo de profesionales altamente especializados en distintas áreas.
                             <p />
-                            DESDE EL AÑO 1982 COMIENZA LA ACTIVIDAD DE ESTE GRUPO EN LA UNIVERSIDAD NACIONAL DE ROSARIO,
-                            DEDICANDONOS EN UN PRINCIPIO AL ÁREA DE LA DOCENCIA TANTO PRIVADA COMO ACADEMICA Y A LA INVESTIGACION
-                            EN LAS ÁREAS DE AUTOMATIZACION INFORMATICA, COMUNICACIONES Y ORGANIZACION DE EMPRESAS.
+                            Desde el año 1982 comienza la actividad de este grupo en la Universidad Nacional de Rosario,
+                            dedicándonos en un principio al área de la docencia tanto privada como académica y a la investigación
+                            en las áreas de automatización informática, comunicaciones y organización de empresas.
 
                         </Box>
                     </Typography>

@@ -4,34 +4,33 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Container } from '@mui/material';
+import { ButtonGroup, Container } from '@mui/material';
 import  './Barra.css'
-
+import  './BotonBarra.js'
 
 const Barra = () => {
     return (
         <>
 
             <Container maxWidth="false" fixed>
-                <Box sx={{
-                    flexGrow: 1,
-                    
-                }}>
-                    <AppBar position="fixed">
-                        <Toolbar sx={{ backgroundColor: '#FFFFFF' }}>
+                <Box >
+                    <AppBar position="fixed" color="primary">
+                        <Toolbar sx={{
 
-                            <img src="logos/eiv_color2.png" 
-                            alt="logo" />
+
+                        }}>
+
+                            <img src="logos/eiv_color2.png" alt="logo" />
                             
-
-
-                            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'Montserrat', color: 'black' }} align="center">
-                                <Button variant="flat" color="primary" href="#home">    HOME</Button>
-                                <Button variant="flat" color="primary" href="#Empresa" >EMPRESA</Button>
-                                <Button variant="flat" color="primary" href="#productos">PRODUCTOS</Button>
-                                <Button variant="flat" color="primary" href="#clientes">CLIENTES</Button>
-                                <Button variant="flat" color="primary" href="#rrhh">    TALENTO HUMANO</Button>
-                                <Button variant="flat" color="primary" href="#contacto">CONTACTO</Button>
+                            <Typography  color="primary" sx={{  m:'auto'}} align="center">
+                            
+                                <Button href="#home"  href="#home"> HOME</Button>
+                                <Button variant="text" href="#Empresa" >EMPRESA</Button>
+                                <Button variant="text" color="primary" href="#productos">PRODUCTOS</Button>
+                                <Button variant="text" color="primary" href="#clientes">CLIENTES</Button>
+                                <Button variant="text" color="primary" href="#rrhh">    TALENTO HUMANO</Button>
+                                <Button variant="text" color="primary" href="#contacto">CONTACTO</Button>
+                            
                             </Typography>
 
 

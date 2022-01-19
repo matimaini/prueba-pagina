@@ -40,7 +40,7 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
                 <Typography
                     variant="h4"
                     component="div"
-                    align="center"
+                    align="left"
                     sx={{
                         flexGrow: 1,
                         fontFamily: 'Montserrat',

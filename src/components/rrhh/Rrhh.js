@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/system'
-import { Container, Divider, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
+import Curriculum from '../curriculum/Curriculum'
 
 
 const Rrhh = ({ fondo, colorfondo, titulo }) => {
@@ -8,7 +9,8 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
         <div>
             <>
                 <a name="rrhh" />
-                <Container id="rrhh"
+                <Container maxWidth="100%"
+                    id="rrhh"
                     align="center"
                     justify="center"
                     direction="column"
@@ -20,18 +22,17 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
                         backgroundImage: `url(${fondo} )`,
                         backgroundRepeat: 'none',
                         display: "flex",
-                        minWidth: "100vw"
 
                     }}  >
 
                     <Box sx={{
-                        textAlign: 'left', m: 'auto', width: '70%'
+                        textAlign: 'left', m: 'auto', width: '70%', mt:5, mb:5
                     }}>
 
                         <Typography
                             variant="h4"
                             component="div"
-                            align="left"
+                            align="center"
                             sx={{
                                 flexGrow: 1,
                                 fontFamily: 'Montserrat',
@@ -70,9 +71,16 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
                                 </Box>
                             </Typography>
                         </Box>
+                    
+                        <Curriculum
+                        titulo="DEJANOS TU CURRICULUM"
+                        
+                    />
+                    
                     </Box>
 
-                    <Divider />
+                    
+
                 </Container>
             </>
         </div>
