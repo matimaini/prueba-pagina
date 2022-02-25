@@ -17,7 +17,7 @@ const Barra = () => {
                     <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
                         <Toolbar >
 
-                            <img src="logos/eiv_color2.png" alt="logo" />
+                            <img src="logos/eiv_color2.png" alt="logo"  />
                             
                             <Typography  color="primary" sx={{  m:'auto'}} align="center">
                             

@@ -3,28 +3,13 @@ import { Box, Container, Fab, FormControl, TextField, Typography } from '@mui/ma
 import AddIcon from '@mui/icons-material/Add';
 import NavigationIcon from '@mui/icons-material/Navigation'
 import React from 'react'
-
+import './Curriculum.css'
 
 const Curriculum = ({ fondo, colorfondo, titulo }) => {
     return (
 
         <>
-            {/* <Container maxWidth="100%"
-                id="producto"
-                align="center"
-                justify="center"
-                direction="column"
-                sx={{
-                    bgcolor: colorfondo,
-                    
-                    verticalAlign: "center",
-                    alignContent: "center",
-                    backgroundImage: `url(${fondo} )`,
-                    
-                }}  > */}
-
-
-                <Box
+        <Box
                     component="form"
                     sx={{
                         '& .MuiTextField-root': { m: 1, width: '50ch', borderTopLeftRadius:10, borderTopRightRadius:10 },
@@ -58,8 +43,8 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                                 <TextField required variant="filled" color="secondary" label="Nombre y apellido" />
                                 <TextField required variant="filled" color="secondary" label="Fecha de nacimiento" />
                                 <TextField          variant="filled" color="secondary" label="Domicilio" />
-                                <TextField required variant="filled" color="secondary" label="Teléfono" />
-                                <TextField required variant="filled" color="secondary" label="Email" />
+                                <TextField required variant="filled" color="secondary" label="Teléfono" type="number" />
+                                <TextField required variant="filled" color="secondary" label="Email" type="mail" />
                                 <TextField variant="filled" color="secondary" label="Comentarios"
                                     id="outlined-textarea"
                                     placeholder="Placeholder"

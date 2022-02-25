@@ -13,6 +13,7 @@ import Mupim from '../../assets/logos/clientes/MUPIM.png';
 import Scbs from '../../assets/logos/clientes/SCBS.png';
 import Venado from '../../assets/logos/clientes/VENADO.png';
 import Provincial from '../../assets/logos/clientes/MUTUAL_PROVINCIAL.png';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Clientes = ({ fondo, colorfondo, titulo }) => {
     return (
@@ -36,68 +37,79 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
             <Box sx={{
                 textAlign: 'left', m: 'auto', width: '70%'
             }}>
-                <Box sx={{ mb: 5 }}>
-                <Typography
-                    variant="h4"
-                    component="div"
-                    align="left"
-                    sx={{
-                        flexGrow: 1,
-                        fontFamily: 'Montserrat',
-                        fontWeight: 'bold'
-                    }} >
+                <ScrollAnimation
+                    animateIn='fadeIn'
+                    animateOut='fadeOut'
+                    duration={1}
+                    delay={0.5}
+                >
+                    <Box sx={{ mb: 5 }}>
+                        <Typography
+                            variant="h4"
+                            component="div"
+                            align="left"
+                            sx={{
+                                flexGrow: 1,
+                                fontFamily: 'Montserrat',
+                                fontWeight: 'bold'
+                            }} >
 
-                    {titulo}
+                            {titulo}
 
 
-                </Typography>
+                        </Typography>
+                    </Box>
+                    <Box sx={{
+                        textAlign: 'left',
+                        borderLeft: 0,
+                        borderColor: 'text.primary',
+                        p: 5,
+
+                    }}>
+
+                        <Grid container spacing={8}>
+
+                            <Grid item xs={4}>
+                                <img src={Agilcred} alt="Agilcred" />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={Aginco} alt="Mutual Aginco" />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={Gusa} alt="Grupo Union SA" />
+                            </Grid>
+
+                            <Grid item xs={4}>
+                                <img src={Federada} alt="Federada ayuda economica" />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={Amesup} alt="Amesup" />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={Ivc} alt="IVC" />
+                            </Grid>
+                            <Grid item xs={2}>
+                                <img src={Provincial} alt="Mutual Provincial" />
+                            </Grid>
+
+                            <Grid item xs={3}>
+                                <img src={Mupim} alt="Mupim" />
+                            </Grid>
+                            <Grid item xs={2}>
+                                <img src={Lyf} alt="Luz y Fuerza" />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={Scbs} alt="San cristobal" />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={Venado} alt="venado" />
+                            </Grid>
+
+                        </Grid>
+
+                    </Box>
+                </ScrollAnimation>
             </Box>
-            <Box sx={{
-                textAlign: 'left',
-                borderLeft: 0,
-                borderColor: 'text.primary',
-                p: 5,
-
-            }}>
-                <Grid container spacing={8}>
-                    <Grid item xs={4}>
-                        <img src={Agilcred} alt="Agilcred" />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <img src={Aginco} alt="Mutual Aginco" />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <img src={Gusa} alt="Grupo Union SA" />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <img src={Federada} alt="Federada ayuda economica" />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <img src={Amesup} alt="Amesup" />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <img src={Ivc} alt="IVC" />
-                    </Grid>
-                    <Grid item xs={2}>
-                        <img src={Provincial} alt="Mutual Provincial" />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <img src={Mupim} alt="Mupim" />
-                    </Grid>
-                    <Grid item xs={2}>
-                        <img src={Lyf} alt="Luz y Fuerza" />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <img src={Scbs} alt="San cristobal" />
-                    </Grid>
-                    <Grid item xs={3}>
-                        <img src={Venado} alt="venado" />
-                    </Grid>
-                </Grid>
-
-            </Box>
-
-        </Box>
 
         </Container >
     )

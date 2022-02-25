@@ -1,12 +1,13 @@
-import { Container, Typography } from '@mui/material'
+import { ButtonBase, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
-
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
     return (
 
         <Container maxWidth="100%"
+
             id="producto"
             align="center"
             justify="center"
@@ -18,17 +19,21 @@ const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
                 alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
                 display: "flex",
-
             }}  >
-            
-                <Box sx={{
-                    textAlign: 'left', m: 'auto', width: '70%'
-                }}>
+
+            <Box sx={{
+                textAlign: 'left', m: 'auto', width: '70%', alignContent: 'center'
+            }}>
+                <ScrollAnimation
+                    animateIn='fadeIn'
+                    animateOut='fadeOut'
+                    duration={1}
+                    delay={0.5}
+                >
                     <Box sx={{ mb: 5 }}>
-                        <div align="right">
-                            <img src={imagen} alt="producto" width="150" style={{ position: 'absolute' }} />
-                        </div>
+
                         <Typography
+
                             variant="h4"
                             component="div"
                             align="left"
@@ -47,26 +52,36 @@ const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
                         textAlign: 'left',
                         borderLeft: 10,
                         borderColor: 'text.primary',
-                        p: 2
+                        p: 2, verticalAlign: 'middle'
                     }}>
-                        <Typography
-                            variant="h6"
-                            component="div"
-                            align="left"
-                            sx={{
-                                flexGrow: 1,
-                                fontFamily: 'Montserrat'
-                            }} >
-                            <Box>
 
-                                {data}
+                        <Card sx={{ display: 'flex', bgcolor: 'transparent', boxShadow: 'none', verticalAlign: 'middle' }}>
+                            <Box sx={{}}>
+                                <CardContent sx={{ flex: '1 0 auto', justifyContent: 'center' }}>
+                                    <Typography
+                                        variant="h6"
+                                        component="div"
+                                        align="left"
+                                        sx={{
+                                            flexGrow: 1,
+                                            fontFamily: 'Montserrat',
+                                            verticalAlign: "middle"
+                                        }} >
+
+                                        {data}
+
+                                    </Typography>
+                                </CardContent>
                             </Box>
-                        </Typography>
-
+                            <CardMedia sx={{ width: 'auto', height: 'auto', maxWidth: 140, maxHeight: 140, m: 'auto' }}
+                                component="img"
+                                image={imagen}
+                            />
+                        </Card>
                     </Box>
+                </ScrollAnimation>
+            </Box>
 
-                </Box>
-            
         </Container >
     )
 }

@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Barra from './components/barra/Barra';
 import Slider from './components/slider/Slider';
@@ -14,10 +15,10 @@ import FondoI from '../src/assets/logos/img_contenido_redesc.png';
 import Container from '@mui/material/Container';
 import Rrhh from './components/rrhh/Rrhh';
 import Busquedas from './components/busquedas/Busquedas';
-import Curriculum from './components/curriculum/Curriculum';
 import Contacto from './components/contacto/Contacto';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material/styles';
+import "./animate.css"
 
 const ThemeC = createTheme({
   palette: {
@@ -26,7 +27,7 @@ const ThemeC = createTheme({
       main: '#36a9df',
     },
     secondary: {
-      main: '#bdbdbd',
+      main: '#FFFFFF',
     },
     background: {
       paper: '#373c46',
@@ -41,80 +42,91 @@ const ThemeC = createTheme({
 
 
 function App() {
+
+
   return (
+
     <div className="App">
       <>
+        
         <a name="home"></a>
-        <ThemeProvider theme={ThemeC}>
-          <Barra />
-          <Container maxWidth="100%" sx={{
-            minHeight: "100vh",
-            verticalAlign: "center",
-            alignContent: "center"
-          }} >
-            <Slider class="slide" />
-          </Container>
-          <a name="Empresa"></a>
-          <Empresa
-            class="slide"
-            titulo="NUESTRA EMPRESA"
-            fondo={Fondo}
-            colorfondo="#373C46"
-          />
+        
+          <ThemeProvider theme={ThemeC}>
+            <Barra />
+            <Container maxWidth="100%" sx={{
+              minHeight: "100vh",
+              verticalAlign: "center",
+              alignContent: "center"
+            }} >
+              <Slider class="slide" />
+            </Container>
+            <a name="Empresa"></a>
+            <Empresa
 
-          <a name="productos"></a>
+              titulo="NUESTRA EMPRESA"
+              fondo={Fondo}
+              colorfondo="#373C46"
+            />
 
-          <Producto fondo={FondoI}
-            titulo="PORTAL VENDEDORES"
-            data="PLATAFORMA ONLINE DONDE PERMITIRA REALIZAR GESTION DE PRESTAMOS DESDE UNA BASE EXTERNA"
-            imagen={PortalVendedores}
-          />
+            <a name="productos"></a>
 
-          <Producto
-            fondo={Fondo}
-            titulo="PORTAL CLIENTES"
-            data="PLATAFORMA ONLINE DISEÑADA CON EL FIN DE ACOMPAÑAR Y ADMINISTRAR LOS MOVIMIENTOS DE TUS ASOCIADOS"
-            imagen={PortalClientes}
-            colorfondo="#373C46"
-          />
+            <Producto
 
-          <Producto
-            fondo={FondoI}
-            titulo="ADMINISTRACION DE TARJETAS"
-            data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO.
+              fondo={FondoI}
+              titulo="PORTAL VENDEDORES"
+              data="PLATAFORMA ONLINE DONDE PERMITIRA REALIZAR GESTION DE PRESTAMOS DESDE UNA BASE EXTERNA"
+              imagen={PortalVendedores}
+            />
+
+            <Producto
+              fondo={Fondo}
+              titulo="PORTAL CLIENTES"
+              data="PLATAFORMA ONLINE DISEÑADA CON EL FIN DE ACOMPAÑAR Y ADMINISTRAR LOS MOVIMIENTOS DE TUS ASOCIADOS"
+              imagen={PortalClientes}
+              colorfondo="#373C46"
+            />
+
+            <Producto
+              fondo={FondoI}
+              titulo="ADMINISTRACION DE TARJETAS"
+              data="PARA SUMAR A TU COMBO DE PRODUCTOS, LA GESTION DE TARJETAS DE CREDITO.
               NUESTRO SOFTWARE CUENTA CON UN MODULO COMPLETO PARA DICHA ADMINISTRACION."
-            imagen={Tarjetas}
-          />
+              imagen={Tarjetas}
+            />
 
-          <a name="clientes"></a>
-          <Clientes
-            titulo="ALGUNOS DE NUESTROS CLIENTES"
-            fondo={Fondo}
-            colorfondo="#373C46"
-          />
+            <a name="clientes"></a>
+            <Clientes
+              titulo="ALGUNOS DE NUESTROS CLIENTES"
+              fondo={Fondo}
+              colorfondo="#373C46"
+            />
 
-          <a name="rrhh"></a>
+            <a name="rrhh"></a>
 
-          <Rrhh
-            titulo="TALENTO HUMANO"
-            fondo={FondoI}
-          />
-          
+            <Rrhh
+              titulo="TALENTO HUMANO"
+              fondo={FondoI}
+            />
 
-          <a name="busquedas"></a>
-          <Busquedas
-            titulo="BUSQUEDAS LABORALES"
-            fondo={Fondo}
-            colorfondo="#373C46" />
 
-          <Contacto
-            titulo="CONTACTO"
-            fondo={FondoI}
-          />
-        </ThemeProvider>
+            <a name="busquedas"></a>
+            <Busquedas
+              titulo="BUSQUEDAS LABORALES"
+              fondo={Fondo}
+              colorfondo="#373C46" />
+            <a name="contacto"></a>
+            <Contacto
+              titulo="CONTACTO"
+              fondo={FondoI}
+            />
+          </ThemeProvider>
+      
       </>
     </div>
   );
 }
 
 export default App;
+
+
+

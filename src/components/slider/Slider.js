@@ -56,7 +56,7 @@ function slider() {
                     />
 
                     <Carousel.Caption>
-                        <h1><b>SERVICE DEVELOPE</b></h1>
+                        <h1><b>SERVICE DEVELOPMENT</b></h1>
                         <p>EL EQUIPO DE DESARROLLO PROYECTA NUEVAS TÉCNICAS INNOVADORAS DONDE TRABAJA EN SINERGIA CON EL CLIENTE,
                             PARA ACORDAR ALTERNATIVAS BENEFICIOSAS, CON EL OBJETIVO DE OBTENER UNA ÓPTIMA RELACIÓN COSTO BENEFICIO.</p>
                     </Carousel.Caption>
