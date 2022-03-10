@@ -4,11 +4,17 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { ButtonGroup, Container } from '@mui/material';
+import { ButtonGroup, Container, Modal } from '@mui/material';
 import  './Barra.css'
 import  './BotonBarra.js'
 
+
+
 const Barra = () => {
+
+    
+  
+
     return (
         <>
 
@@ -31,11 +37,12 @@ const Barra = () => {
                             </Typography>
 
 
-                            <Button color="primary">Acceso clientes</Button>
+                            <Button color="info" variant='outlined' >Acceso clientes</Button>
                         </Toolbar>
                     </AppBar>
                 </Box>
             </Container>
+            
 
         </>
     )

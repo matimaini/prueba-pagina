@@ -21,7 +21,10 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
                         verticalAlign: "center",
                         alignContent: "center",
                         backgroundImage: `url(${fondo} )`,
-                        backgroundRepeat: 'none',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: "center center",
+			            backgroundSize: "cover",
+			            backgroundAttachment: "fixed",
                         display: "flex",
 
                     }}  >

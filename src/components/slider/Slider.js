@@ -40,6 +40,7 @@ function slider() {
                         className="d-block w-100"
                         src="logos/img_redes_para_fondo_celeste.png"
                         alt="Fondo"
+                        
                     />
 
                     <Carousel.Caption>

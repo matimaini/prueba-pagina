@@ -19,6 +19,10 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
                 verticalAlign: "center",
                 alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: "center center",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
                 display: "flex",
             }}  >
 
@@ -50,7 +54,7 @@ const Empresa = ({ fondo, colorfondo, titulo }) => {
                         textAlign: 'left',
                         borderLeft: 10,
                         borderColor: 'text.primary',
-                        p: 2
+                        p: 2, textTransform: 'uppercase'
                     }}>
 
                         <Typography

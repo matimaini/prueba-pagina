@@ -41,7 +41,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                         <div>
                             <FormControl >
                                 <TextField required variant="filled" color="secondary" label="Nombre y apellido" />
-                                <TextField required variant="filled" color="secondary" label="Fecha de nacimiento" />
+                                <TextField required variant="filled" color="secondary" label="Fecha de nacimiento" type="date"/>
                                 <TextField          variant="filled" color="secondary" label="Domicilio" />
                                 <TextField required variant="filled" color="secondary" label="Teléfono" type="number" />
                                 <TextField required variant="filled" color="secondary" label="Email" type="mail" />

@@ -19,6 +19,10 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                 verticalAlign: "center",
                 alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: "center center",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
                 display: "flex",
                 /* m: 2 */
 

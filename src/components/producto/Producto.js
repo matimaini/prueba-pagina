@@ -18,6 +18,10 @@ const Producto = ({ fondo, colorfondo, titulo, data, imagen }) => {
                 verticalAlign: "center",
                 alignContent: "center",
                 backgroundImage: `url(${fondo} )`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: "center center",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
                 display: "flex",
             }}  >
 
