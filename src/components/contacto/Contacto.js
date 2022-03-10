@@ -1,4 +1,4 @@
-import React, { useState, useState } from 'react'
+import React, { useState } from 'react'
 
 import { Autocomplete, Box, Container, Fab, FormControl, TextField, Typography } from '@mui/material'
 import NavigationIcon from '@mui/icons-material/Navigation'
@@ -7,14 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Form } from 'react-bootstrap';
 
 
-/*function valorProducto(producto) {
-  
-const [product, setproduct] = useState(producto)
-const valorProducto = () => setproduct(this.Autocomplete.value)
 
-return (console.log(valorProducto))
-}
-*/
 const Productos = [
   { label: 'Portal vendedores', value:'PortalVendedores' },
   { label: 'Portal clientes', value:'PortalClientes' },
@@ -57,6 +50,8 @@ const Contacto = ({ fondo, colorfondo, titulo }) => {
               + ' ' + datos.domicilio + ' local ' + datos.localidad + ' ' + datos.provincia + ' ' + datos.pais
               + ' ' + datos.email + ' ' + datos.producto + ' ' + datos.comentario)
 }
+
+const [producto, setproducto] = useState("")
 
   return (
     <>
@@ -141,7 +136,7 @@ const Contacto = ({ fondo, colorfondo, titulo }) => {
                     disablePortal
                     id="Producto"
                     getOptionSelected={(option, value) => option.id === value.id}
-                    onChange={handleInputChange} name="producto" 
+                    onChange={setproducto} name="producto" 
                     options={Productos}
                     renderInput={(params) => <TextField {...params} label="Producto" />}
                   />
