@@ -1,11 +1,17 @@
 
-import { Box, Container, Fab, FormControl, TextField, Typography } from '@mui/material'
+import { Box,  Fab, FormControl, TextField, Typography } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 import NavigationIcon from '@mui/icons-material/Navigation'
 import React from 'react'
 import './Curriculum.css'
 
 const Curriculum = ({ fondo, colorfondo, titulo }) => {
+
+    var someDate = new Date();
+    var numberOfDaysToAdd = 3;
+    var date = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+    var defaultValue = new Date(date).toISOString().split("T")[0];
+
     return (
 
         <>
@@ -41,7 +47,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                         <div>
                             <FormControl >
                                 <TextField required variant="filled" color="secondary" label="Nombre y apellido" />
-                                <TextField required variant="filled" color="secondary" label="Fecha de nacimiento" type="date"/>
+                                <TextField required variant="filled" color="secondary" label="Fecha de nacimiento" type="date" defaultValue={defaultValue}/>
                                 <TextField          variant="filled" color="secondary" label="Domicilio" />
                                 <TextField required variant="filled" color="secondary" label="Teléfono" type="number" />
                                 <TextField required variant="filled" color="secondary" label="Email" type="mail" />
@@ -51,7 +57,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                                     multiline />
 
                                 <Box sx={{ justifyContent: 'space-around', p: 2, display: 'flex' }}>
-                                    <label for="boton-cv">
+                                    <label htmlFor="boton-cv">
                                         <input type="file" id="boton-cv" style={{ display: 'none' }} />
 
                                         <Fab variant="extended"

@@ -51,7 +51,7 @@ const Contacto = ({ fondo, colorfondo, titulo }) => {
               + ' ' + datos.email + ' ' + datos.producto + ' ' + datos.comentario)
 }
 
-const [producto, setproducto] = useState("")
+//const [producto, setproducto] = useState("")
 
   return (
     <>
@@ -97,8 +97,7 @@ const [producto, setproducto] = useState("")
 
             <Box component="form"
               sx={{
-                textAlign: 'center', display: 'grid',
-                display: 'flex', flexWrap: 'wrap'
+                textAlign: 'center', display: 'grid', flexWrap: 'wrap'
 
               }}>
 
@@ -117,6 +116,14 @@ const [producto, setproducto] = useState("")
 
                 }}
                 >
+                  <Autocomplete
+                    disablePortal
+                    id="Producto"
+                    getOptionSelected={(option, value) => option.id === value.id}
+                    name="producto" 
+                    options={Productos}
+                    renderInput={(params) => <TextField {...params} label="Producto" />}
+                  />
                   <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="nombre" label="Nombre y apellido" sx={{ color: 'text.primary' }} />
                   <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="empresa" label="Empresa" sx={{ color: 'text.primary' }} />
                   <div>
@@ -128,18 +135,10 @@ const [producto, setproducto] = useState("")
                     <TextField variant="filled" color="secondary" onChange={handleInputChange} name="localidad"  label="Localidad" />
                   </div>
                   <div>
-                    <TextField          variant="filled" color="secondary"           onChange={handleInputChange} name="provincia"  label="Provincia" />
-                    <TextField required variant="filled" color="secondary"  onChange={handleInputChange} name="pais"  label="Pais" />
+                    <TextField variant="filled" color="secondary"  onChange={handleInputChange} name="provincia"  label="Provincia" />
+                    <TextField variant="filled" color="secondary"  onChange={handleInputChange} name="pais"       label="Pais" />
                   </div>
-                    <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="email"  label="Email" type='email'/>
-                  <Autocomplete
-                    disablePortal
-                    id="Producto"
-                    getOptionSelected={(option, value) => option.id === value.id}
-                    onChange={setproducto} name="producto" 
-                    options={Productos}
-                    renderInput={(params) => <TextField {...params} label="Producto" />}
-                  />
+                  <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="email"  label="Email" type='email'/>  
                   <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="comentario"  label="Comentarios"
                     id="outlined-textarea"
                     placeholder="Placeholder"

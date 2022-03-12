@@ -70,47 +70,47 @@ const Clientes = ({ fondo, colorfondo, titulo }) => {
                         p: 5,
 
                     }}>
+                        <Container >
+                            <Grid container spacing={8}>
 
-                        <Grid container spacing={8}>
+                                <Grid item xs={4}>
+                                    <img src={Agilcred} alt="Agilcred" />
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <img src={Aginco} alt="Mutual Aginco" />
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <img src={Gusa} alt="Grupo Union SA" />
+                                </Grid>
 
-                            <Grid item xs={4}>
-                                <img src={Agilcred} alt="Agilcred" />
-                            </Grid>
-                            <Grid item xs={4}>
-                                <img src={Aginco} alt="Mutual Aginco" />
-                            </Grid>
-                            <Grid item xs={4}>
-                                <img src={Gusa} alt="Grupo Union SA" />
-                            </Grid>
+                                <Grid item xs={4}>
+                                    <img src={Federada} alt="Federada ayuda economica" />
+                                </Grid>
+                                <Grid item xs={3}>
+                                    <img src={Amesup} alt="Amesup" />
+                                </Grid>
+                                <Grid item xs={3}>
+                                    <img src={Ivc} alt="IVC" />
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <img src={Provincial} alt="Mutual Provincial" />
+                                </Grid>
 
-                            <Grid item xs={4}>
-                                <img src={Federada} alt="Federada ayuda economica" />
-                            </Grid>
-                            <Grid item xs={3}>
-                                <img src={Amesup} alt="Amesup" />
-                            </Grid>
-                            <Grid item xs={3}>
-                                <img src={Ivc} alt="IVC" />
-                            </Grid>
-                            <Grid item xs={2}>
-                                <img src={Provincial} alt="Mutual Provincial" />
-                            </Grid>
+                                <Grid item xs={3}>
+                                    <img src={Mupim} alt="Mupim" />
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <img src={Lyf} alt="Luz y Fuerza" />
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <img src={Scbs} alt="San cristobal" />
+                                </Grid>
+                                <Grid item xs={3}>
+                                    <img src={Venado} alt="venado" />
+                                </Grid>
 
-                            <Grid item xs={3}>
-                                <img src={Mupim} alt="Mupim" />
                             </Grid>
-                            <Grid item xs={2}>
-                                <img src={Lyf} alt="Luz y Fuerza" />
-                            </Grid>
-                            <Grid item xs={4}>
-                                <img src={Scbs} alt="San cristobal" />
-                            </Grid>
-                            <Grid item xs={3}>
-                                <img src={Venado} alt="venado" />
-                            </Grid>
-
-                        </Grid>
-
+                        </Container>
                     </Box>
                 </ScrollAnimation>
             </Box>

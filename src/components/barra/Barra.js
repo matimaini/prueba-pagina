@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { ButtonGroup, Container, Modal } from '@mui/material';
+import { Container } from '@mui/material';
 import  './Barra.css'
 import  './BotonBarra.js'
 

@@ -49,7 +49,7 @@ function App() {
     <div className="App">
       <>
         
-        <a name="home"></a>
+        <a name="home" href='#home'> </a>
         
           <ThemeProvider theme={ThemeC}>
             <Barra />
@@ -60,7 +60,7 @@ function App() {
             }} >
               <Slider class="slide" />
             </Container>
-            <a name="Empresa"></a>
+            <a name="Empresa" href='#empresa'> </a>
             <Empresa
 
               titulo="NUESTRA EMPRESA"
@@ -68,7 +68,7 @@ function App() {
               colorfondo="#373C46"
             />
 
-            <a name="productos"></a>
+            <a name="productos" href='#productos'> </a>
 
             <Producto
 
@@ -94,14 +94,14 @@ function App() {
               imagen={Tarjetas}
             />
 
-            <a name="clientes"></a>
+            <a name="clientes" href='#clientes'> </a>
             <Clientes
               titulo="ALGUNOS DE NUESTROS CLIENTES"
               fondo={Fondo}
               colorfondo="#373C46"
             />
 
-            <a name="rrhh"></a>
+            <a name="rrhh" href='#rrhh'> </a>
 
             <Rrhh
               titulo="TALENTO HUMANO"
@@ -109,12 +109,12 @@ function App() {
             />
 
 
-            <a name="busquedas"></a>
+            <a name="busquedas" href='#busquedas'> </a>
             <Busquedas
               titulo="BUSQUEDAS LABORALES"
               fondo={Fondo}
               colorfondo="#373C46" />
-            <a name="contacto"></a>
+            <a name="contacto" href='#contacto'> </a>
             <Contacto
               titulo="CONTACTO"
               fondo={FondoI}

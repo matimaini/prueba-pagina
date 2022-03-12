@@ -9,7 +9,8 @@ const Rrhh = ({ fondo, colorfondo, titulo }) => {
     return (
         <div>
             <>
-                <a name="rrhh" />
+                <a name="rrhh"> </a>
+
                 <Container maxWidth="100%"
                     id="rrhh"
                     align="center"
