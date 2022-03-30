@@ -63,11 +63,11 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                                         <Fab variant="extended"
                                             color="secondary"
                                             aria-label="add"
-                                            elementType="file"
+                                            elementtype="file"
                                             component="span"
                                             sx={{ m: 2 }} >
 
-                                            <AddIcon elementType='file' />
+                                            <AddIcon elementtype='file' />
                                             Adjuntá tu CV
                                         </Fab>
 
@@ -75,7 +75,7 @@ const Curriculum = ({ fondo, colorfondo, titulo }) => {
                                     <Fab variant="extended"
                                         color="secondary"
                                         aria-label="add"
-                                        elementType="file"
+                                        
                                         component="span"
                                         sx={{ m: 2 }}
                                     >

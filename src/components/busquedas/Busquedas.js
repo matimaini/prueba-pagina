@@ -105,11 +105,11 @@ const Busquedas = ({ fondo, colorfondo, titulo }) => {
                                         href="#rrhh"
                                         color="secondary"
                                         aria-label="add"
-                                        elementType="file"
+                                        elementtype="file"
                                         component="span"
                                         sx={{ m: 2 }} >
 
-                                        <AddIcon elementType='file' />
+                                        <AddIcon elementtype='file' />
                                         Envianos tu CV
                                     </Fab>
 

@@ -1,55 +1,17 @@
-import React, { useState } from 'react'
+import React /*, { useState }*/ from 'react'
 
-import { Autocomplete, Box, Container, Fab, FormControl, TextField, Typography } from '@mui/material'
-import NavigationIcon from '@mui/icons-material/Navigation'
+import {  Box, Container,  Typography } from '@mui/material'
+import FormularioC from './FormularioC';
 import './Contacto.css'
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Form } from 'react-bootstrap';
+//import { Form } from 'react-bootstrap';
+//import FormularioFormik from './formik';
 
 
-
-const Productos = [
-  { label: 'Portal vendedores', value:'PortalVendedores' },
-  { label: 'Portal clientes', value:'PortalClientes' },
-  { label: 'Administracion de tarjetas', value:'Tarjetas' },
-  { label: 'Sistema financiero', value:'financiero' }
-];
 
 const Contacto = ({ fondo, colorfondo, titulo }) => {
 
 
-  const handleInputChange = (event) => {
-  
-   setDatos({
-       ...datos,
-       [event.target.name] : event.target.value
-   })
-
-   console.log(datos.producto)
-
- }
-
- 
- const [datos, setDatos] = useState({
-   nombre: '',
-   empresa: '',
-   telefono:'',
-   celular: '',
-   domicilio: '',
-   localidad: '',
-   provincia: '',
-   pais: '',
-   email: '',
-   producto: '',
-   comentario:''
- })
- 
- const enviarDatos = (event) => {
-  event.preventDefault()
-  console.log('enviando datos... nombre ' + datos.nombre + ' empresa ' + datos.empresa + ' cel '  + datos.celular 
-              + ' ' + datos.domicilio + ' local ' + datos.localidad + ' ' + datos.provincia + ' ' + datos.pais
-              + ' ' + datos.email + ' ' + datos.producto + ' ' + datos.comentario)
-}
 
 //const [producto, setproducto] = useState("")
 
@@ -75,7 +37,7 @@ const Contacto = ({ fondo, colorfondo, titulo }) => {
         }}  >
 
         <Box
-          component="form" sx={{ m: 'auto', textAlign: 'center', }}>
+           sx={{ m: 'auto', textAlign: 'center', }}>
           <ScrollAnimation
             animateIn='fadeIn'
             animateOut='fadeOut'
@@ -102,65 +64,7 @@ const Contacto = ({ fondo, colorfondo, titulo }) => {
               }}>
 
               <div>
-                <Form onSubmit={enviarDatos}> 
-                <FormControl
-                 sx={{
-                  textAlign: 'center', display: 'grid',
-                  
-                  flexWrap: 'wrap',
-                  '& .MuiTextField-root': { m: 1, minWidth: '24ch', maxWidth: '50ch', /* backgroundColor: '#385E70', */ borderTopLeftRadius: 10, borderTopRightRadius: 10 },
-                  '& .MuiInputLabel-root': { fontWeight: '1rem', borderTopLeftRadius: 10, borderTopRightRadius: 10 },
-                  '& .MuiAutocomplete': { m: 1, maxWidth: '50ch', /* backgroundColor: '#385E70', */ borderTopLeftRadius: 10, borderTopRightRadius: 10 },
-                  '& .MuiOutlinedInput-notchedOutline': { border: 'none' },
-
-
-                }}
-                >
-                  <Autocomplete
-                    disablePortal
-                    id="Producto"
-                    getOptionSelected={(option, value) => option.id === value.id}
-                    name="producto" 
-                    options={Productos}
-                    renderInput={(params) => <TextField {...params} label="Producto" />}
-                  />
-                  <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="nombre" label="Nombre y apellido" sx={{ color: 'text.primary' }} />
-                  <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="empresa" label="Empresa" sx={{ color: 'text.primary' }} />
-                  <div>
-                    <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="telefono" label="Teléfono" type='number' />
-                    <TextField          variant="filled" color="secondary" onChange={handleInputChange} name="celular" label="Celular" type='number' />
-                  </div>
-                  <div>
-                    <TextField variant="filled" color="secondary" onChange={handleInputChange} name="domicilio"  label="Domicilio" />
-                    <TextField variant="filled" color="secondary" onChange={handleInputChange} name="localidad"  label="Localidad" />
-                  </div>
-                  <div>
-                    <TextField variant="filled" color="secondary"  onChange={handleInputChange} name="provincia"  label="Provincia" />
-                    <TextField variant="filled" color="secondary"  onChange={handleInputChange} name="pais"       label="Pais" />
-                  </div>
-                  <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="email"  label="Email" type='email'/>  
-                  <TextField required variant="filled" color="secondary" onChange={handleInputChange} name="comentario"  label="Comentarios"
-                    id="outlined-textarea"
-                    placeholder="Placeholder"
-                    multiline />
-
-                  <Box sx={{ justifyContent: 'space-around', p: 2, display: 'block' }}>
-
-                    <Fab variant="extended"
-                      color="secondary"
-                      aria-label="add"
-                      elementType="submit"
-                      component="span"
-                      type='submit'
-                      onClick={enviarDatos}
-                      sx={{ m: 2 }}
-                    >
-                      <NavigationIcon />
-                      Enviar formulario
-                    </Fab>
-                  </Box>
-                </FormControl>
-                </Form>
+                <FormularioC />
               </div>
 
             </Box>
